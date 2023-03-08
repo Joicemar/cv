@@ -44,8 +44,9 @@ header
     justify-content: space-between;
     align-items: center; /*centraliza na linha vertical da sua div*/
     padding-inline: 30px;
-    position: fixed;
     top: 0px;
+    position: fixed;
+    float: right;
     z-index: 999;
 }
 .ico
