@@ -127,11 +127,12 @@ nav ul li a:hover
     }
     nav ul
     {
-        gap: 7px;
+        gap: 2px;
     }
     header
     {
-        justify-content: start;
+        justify-content: left;
+        padding-inline: 0px;
     }
 }
 
