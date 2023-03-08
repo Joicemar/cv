@@ -46,7 +46,7 @@ header
     padding-inline: 30px;
     position: fixed;
     top: 0px;
-    overflow: hidden;
+    z-index: 999;
 }
 .ico
 {
