@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+}
+
+.banner
+{
+   
+    /*Cria um sombra sobre a imagem, pode se criar um degrade*/
+
+}
+
+.background
+{
+    /*Foi necessario colocar o background em uma div dentro do corpo paraque pudesse 
+    ser fixo só ele e não todos os elementos juntos no mometo de setar a configuração*/
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(37, 0, 0, 0.521))
+    , url(imagens/tec.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+}
+
+header
+{
+    position: relative;
+    display: flex; /*flex para alinhar suas divs mesmo em seções separadas*/
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center; /*centraliza na linha vertical da sua div*/
+    padding-inline: 30px;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+}
+.ico
+{
+    color: white;
+}
+
+.menu
+{   
+    /*Colocar as config do item na div pai anterior*/
+    width: 100%;
+    padding-right: 15%;
+    align-items: end;
+    justify-content: center;
+    text-align: end; /*Alinhamento na horizontal*/
+}
+
+.menu a
+{
+    font-family: 'Poppins', Verdana, Geneva, sans-serif, Tahoma;
+    text-decoration: none;
+    display: inline-block;
+    padding-inline: 12px;
+    font-weight: bolder;
+    color: white;
+    transition: 0.4s;
+    background: none;
+}
+
+.menu a:hover
+{
+    text-decoration-line: underline;
+    color: rgb(255, 53, 46);
+}
+
+.apresentar
+{
+    text-align: center; /*Alinhamento na horizontal*/
+    margin-top: 150px;
+    font-size: 24px;
+}
+
+.apresentar h1, h2
+{
+    position: relative;
+    margin: 10px;
+    color: rgb(236, 251, 255);
+    font-family: 'Poppins', sans-serif, 'Courier New', Courier, monospace;
+}
+
+.apresentar h2 span
+{
+    color: red;
+    font-family: inherit; /*Reforçar que o inherit herda as configurações do seu pai*/
+}
+
+.apresentar h1:hover, h2:hover
+{
+    color: yellow;
+}
+
+.apresentar h3
+{
+    position: relative;
+    margin: 10px;
+    color: rgb(236, 251, 255);
+    font-family: 'Poppins', sans-serif, 'Courier New', Courier, monospace;
+    margin-top: 7%;
+
+}
+
+#sobre
+{
+    position: relative;
+    width: 100%;
+}
+
+#sobre p
+{
+    position: relative;
+    color: aliceblue;
+    font-family: 'Poppins';
+    word-spacing: 7pt;
+    font-size: 18pt;
+    /* suficiente para centralizar uma tag que está dento de uma caixa com 100%
+    width: 650px;
+    margin: auto; 
+    */
+    margin: auto;
+    padding-inline: 32px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.projetos
+{
+    position: relative;
+    height: auto;
+    width: 80%; /*80% PARA AS DIVS DE DENTRO FICAREM MAIS ALINHADAS AO CENTRO*/
+    margin: auto; /*MARGIN AUTO PARA OS 80% CENTRALIZAREM NA TELA E NÃO COLAREM NO CANTO*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 18px; /*Seu prórpio distanciamento entre as divs*/
+    margin-top: 111PX;
+}
+
+@media (max-width:900px) {
+    .projetos
+    {
+        flex-direction: column;
+    }
+    .projetos div
+    {
+        margin-top: 20px;
+    }
+    #sobre p
+    {
+        font-size: 14pt;
+    }
+    nav.menu
+    {
+        padding-right: 7%;
+    }
+}
+
+@media (max-width:650px) { nav.menu{ padding-right: 1%;} }
+
+@media (max-width:510px)
+{
+    nav.menu
+    {
+        padding-inline: 0px;
+    }
+    nav.menu a
+    {
+        padding-inline: 7px;
+    }
+    header {
+        padding-inline: 10px;
+    }
+}
+
+.projetos div
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 18, 18, 0.158);
+    margin-inline: 10px;
+    transition: 0.8s;
+    border-radius: 14px;
+    
+    box-shadow: 0px 2px 15px rgba(49, 156, 0, 0.356);
+
+}
+.projetos div a
+{
+    position: relative;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: transform 0.32s ease-in-out;/*Tempo de animação. ease-in-out, inicio ao fim*/
+    text-align: center;
+    /*Posicioar um texto da vertical: 
+    position: relative;
+    top: 40%; */
+    position: relative;
+    top: 40%;
+    
+}
+/*
+.projetos div a:hover
+{
+    color: rgb(0, 255, 0);
+    text-decoration: underline;
+}
+*/
+.projetos div:hover
+{
+    background-color: rgba(150, 150, 150, 0.158);
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 25px rgb(7, 194, 169);
+}
+
+footer
+{
+    width: 100%;
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+
+}
