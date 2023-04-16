@@ -188,18 +188,42 @@ header {
 .imagens .me {
     width: 130px;
     z-index: 1;
-    margin-left: 20px;
-    position: relative;
-    bottom: 100px;
+    position: absolute;
+    margin-left: 83px;
+    top: 300px;
+    animation: animateMe 5s ease-in-out infinite;
+
+}
+@keyframes animateMe {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
 }
 .imagens .fundo{
     width: 180px;
-    position: relative;
-    top: 50px;
-    right: 7px;
+    position: absolute;
+    margin-left: 40px;
+    top: 290px;
     rotate: 16deg;
+    animation: animateFundo 5s ease-in-out infinite;
 }
+@keyframes animateFundo {
 
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+}
 
 #text {
     color: rgb(250, 96, 96);
@@ -216,7 +240,7 @@ main {
 .sobre .content {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: start;
     align-items: end;
     gap: 30px;
@@ -343,6 +367,14 @@ main {
     .sobre {
         flex-direction: column;
         font-size: 9pt;
+    }
+    .imagens .me{
+        position: relative;
+        top: -90px;
+    }
+    .imagens .fundo{
+        position: relative;
+        top: 70px;
     }
     main {
         margin-left: 100px;
