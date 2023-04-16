@@ -1,162 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>💻 Joicemar's Personal Site</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='main.js'></script>
-    <style>
-        body{
-            background-image: linear-gradient(45deg, #ffffff, #8587ff );
-            background-attachment: fixed; /*Mesmo que role o back ground fica fixo*/
-            zoom: 90%;
-        }
-        .first{
-            padding-top: 22px;
-        }
-    </style>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
-<body>
-    <table class="first" cellspacing="10">
-        <tr>
-            <!--2 td = duas celulas que se alinharão horizontalment-->
-            <td>
-                <picture>
-                    <source media="(max-width: 752px)" srcset="images/photo2.png" type="image/png">
-                    <img  src="images/photo.png"  alt="joicemar profile picture" width="232px">
-                </picture>
-                </td>
-            <td>  
-                <h1>joicemar .S. Morais</h1>
-                <!--tag p -> parágrafo -->
-                <p class="tittle"><em>Estudande de Análise e Desenvolvimento de Sistemas 
-                    na Vincit e adepto ao <strong> autodidatismo.</strong></em></p>
-                <p>A caminho do web full stack. Eu ❤️ de café.</p>
-                <p>Tenho fundamentos em html e css, projetos em Java na maioria para Games,
-                    uso GitHub, em aprendizado do javascript.</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr size="3" noshade color="black"> <!--Cria uma linha na horizontal-->
-    <p><em></em></p>
 
+<body class="body day">
+    <div class="container">
+        <header>
+            <div class="logo">My<span>Portfolio</span>_</div>
+        </header>
+        <div class="menu">
+            <div class="bars">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="menu-bars">
+                <ul>
+                    <li>Projetos</li>
+                    <li><a href="#">Em breve!</a></li>
+                    <li><a href="#">Em breve!</a></li>
+                    <li><a href="#">Em breve!</a></li>
+                    <li><a href="#">Em breve!</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="sobre">
+                <div class="content">
+                    <div class="imagens">
+                        <img class="me" src="foto.png" alt="">
+                    </div>
+                    <div class="span">
+                        <h3 class="title">Hey_</h3>
+                        <h2>Eu sou <span class="text" id="text"></span></h2>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <div class="skills">
+                        <h3 class="title">Habilidades:</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="texto">
+                        <h3 class="title">Sobre: </h3>
+                        <p>
+                            Olá! Eu sou Joicemar da Silva Morais.
+                            Estou cursando Análise e Desenvolvimento de Sistemas
+                            e adoro desenvolver websites. Busco conhecimentos
+                            de diversas fontes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="panel">
 
-    <h3>Minhas redes sociais:</h3>
-    <ul>
-        <li><img src="images/github.png" alt="Logo HTML5"> 
-            <a href="https://github.com/Joicemar" target="_blank" rel="next">GitHub</href></a></li>
-        
-        <li><img src="images/linkedin.png" alt="Logo HTML5">
-            <a href="https://www.linkedin.com/in/joicemar-s-morais-ba4a691b8/" target="_blank" 
-            rel="next">Linkdin</a></li>
-    </ul>
-    </h2>
+                    <div class="icos">
+                        <a href="https://github.com/Joicemar" target="_blank">
+                            <ion-icon class="icon" size="large" name="logo-github">
 
+                            </ion-icon>
+                        </a>
+                        <a href="mailto:joicemardesigner@gmail.com" target="_blank">
+                            <ion-icon class="icon" size="large" name="mail-outline"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joicemar-s-morais-ba4a691b8/" target="_blank">
+                            <ion-icon class="icon" size="large" name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="https://discord.gg/ByaVgKhz4V" target="_blank">
+                            <ion-icon class="icon" size="large" name="logo-discord"></ion-icon>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5551994029066" target="_blank">
+                            <ion-icon class="icon" size="large" name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="day-icos">
+                        <div class="moon">
+                            <ion-icon class="moon-ico" name="moon"></ion-icon>
+                        </div>
+                        <div id="box">
+                            <div id="ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    <h3>Cursos de tecnologia que Gosto</h3>
-    <ul>
-        <li><a href="https://www.youtube.com/@CursoemVideo"  target="_blank" rel="external">Curso em Vídeo</a></li>
-        <li><a href="https://www.jdevtreinamento.com.br"  target="_blank" rel="external">Jdev Treinamento</a></li>
-        <li><a href="https://www.youtube.com/@DevDojoBrasil"  target="_blank" rel="external">Dev Dojo </a></li>
-        <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"  target="_blank" 
-        rel="external">The Complete 2023 Web Development Bootcamp</a></li>
-    </ul>
-    <hr size="2" noshade color="black"> <!--Cria uma linha na horizontal-->
-
-    <h3>Work Experience</h3>
-    <table><!--table - exibir dados estruturados-->
-        <thread><!--Razão por colocar o th em um corpo diferente é para poder trabalhar separado com essa parte-->
-            <tr><!--Linha de tabela-->
-                <th>Projetos:</th>
-            </tr>
-        </thread>
-            <tbody>
-
-            </tbody>
-        <tfoot>
-            
-        </tfoot>
-        <!--Por ser uma tabela, todas as colunas são estruturadas/alinhadas juntas-->
-        <tr><!--Uma linha--><!--Linha de tabela-->
-            <!-- td Tag com contém os dados-->
-            <td>Possível Novo Site <a href="WebSite/index.html" target="_blank">Clique Aqui</a></td>
-        </tr>
-        <tr>
-            <td>Desafio Curso em Vídeo <a href="DesafioCursoEmVideo/index.html" target="_blank">Clique Aqui</a></td>
-        </tr>
-        <tr>
-            <td>menu com HTML e CSS <a href="nav bar 01/index.html" target="_blank">Clique Aqui</a></td>
-        </tr>
-   
-    </table>
-      <hr size="2" noshade color="black"> <!--Cria uma linha na horizontal-->
-
-    <h3>Skills</h3>
-
-    <table >
-        <tr>
-            <td>
-                <table >
-                    <tr>
-                        <td>Core Java</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>JSP</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td>⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Draw</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Photography</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table >
-                  
-            
-                </table>
-            </td>
-        </tr>
-    </table>
-    <br>
-    </br>
-    <hr size="2" noshade color="black"> <!--Cria uma linha na horizontal-->
-
-    <h4>
-        <a href="hobbies.html">Meus hobbies</a><br></br>
-    </h4>
-    <h4>
-        <a href="contato.html">Meu Contato</a><br>
-    </h4>
-
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src='main.js'></script>
 
 </body>
+
 </html>
