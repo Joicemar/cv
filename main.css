@@ -136,7 +136,7 @@ header {
     flex-direction: column;
     right: 30px;
     top: -15px;
-    pointer-events: none;
+    
 }
 .menu .bars div
 {
