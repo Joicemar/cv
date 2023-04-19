@@ -1,10 +1,10 @@
 let typingText = new Typed("#text", {
-  strings: ["Joicemar", "Programador", "Dev front-end"],
-  loop: true,
-  backDelay: 3000,
-  typeSpeed: 100,
-  backSpeed: 30,
-  loop: true,
+    strings: ["Joicemar", "Programador", "Dev front-end"],
+    loop: true,
+    backDelay: 3000,
+    typeSpeed: 100,
+    backSpeed: 30,
+    loop: true,
 })
 
 const circle = document.querySelector(".dayNight");
@@ -29,4 +29,17 @@ bars.addEventListener('click', function () {
 
     menu.classList.toggle('active');
 
+});
+
+// Cursor do mouse:
+document.addEventListener("mousemove", function (event) {
+    const circle = document.querySelector(".circle");
+    let x = event.clientX - circle.offsetWidth / 2;
+    let y = event.clientY - circle.offsetHeight / 2;
+    circle.style.left = x + "px";
+    circle.style.top = y + "px";
+});
+document.addEventListener('mouseout', () => {
+    // remove o círculo do DOM quando o mouse sai da página
+    circle.remove();
 });
