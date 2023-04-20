@@ -13,13 +13,14 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
     cursor: none;
 }
 
 .logo {
     margin-left: 32px;
     font-weight: 500;
-    color: rgb(103, 65, 255);
+    color: rgb(65, 68, 255);
     font-family: 'Open Sans', sans-serif;
     font-size: 22pt;
     transition: .5s;
@@ -123,6 +124,7 @@ body {
     */
     background-color: #030303;
     transition: .5s;
+    overflow-y: auto;
 }
 
 .body.day #ball {
