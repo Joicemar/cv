@@ -22,6 +22,7 @@ body {
     font-weight: 500;
     color: rgb(65, 68, 255);
     font-family: 'Open Sans', sans-serif;
+    font-family: "Courier New", Courier, monospace;
     font-size: 22pt;
     transition: .5s;
 }
@@ -72,7 +73,17 @@ body {
     border-radius: 50%;
     border: 1px solid #464646;
 }
-
+.blob {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.blob:nth-child(2)
+{
+    filter: blur(40px);
+    position: absolute;
+    top: 0px;
+}
 .day-icos {
     display: flex;
     flex-direction: column;
@@ -101,7 +112,7 @@ body {
 }
 
 #day-select {
-    padding: 16px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -297,11 +308,11 @@ header {
 
 .imagens .me {
     width: 130px;
-    z-index: 1;
     position: relative;
-    top: -156px;
-    left: 36px;
+    top: 30px;
+    left: 44px;
     animation: animateMe 5s ease-in-out infinite;
+    z-index: 99;
 
 }
 
@@ -313,27 +324,13 @@ header {
     }
 
     50% {
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
 }
 
 .imagens .fundo {
-    width: 180px;
-    position: relative;
-    rotate: 16deg;
-    animation: animateFundo 5s ease-in-out infinite;
-}
-
-@keyframes animateFundo {
-
-    0%,
-    100% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(30px);
-    }
+    width: 120px;
+    position: absolute;
 }
 
 main {
@@ -382,15 +379,25 @@ main {
     flex-direction: column;
     gap: 10px;
     color: rgb(231, 231, 231);
-    font-family: 'Poppins', sans-serif;
     flex: 1;
 }
-
+strong {
+    color: black;
+}
+.body.night strong {
+    color: whitesmoke;
+}
+.skills h3,
+.texto h3
+{
+    font-family: "Courier New", Courier, monospace;
+}
 .skills ul {
     font-size: 17pt;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: "Courier New", Courier, monospace;
     margin-bottom: 40px;
     margin-top: 10px;
+    list-style: none;
 }
 
 .skills ul li {
@@ -399,7 +406,7 @@ main {
 
 .content h2 {
     font-size: 25pt;
-    font-weight: 600;
+    font-weight: 500;
     transition: .8s;
 }
 
@@ -414,10 +421,7 @@ main {
     font-size: 20px;
     margin-top: 10px;
     max-width: 750px;
-}
-
-.skills ul {
-    list-style: none;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .contact {
@@ -499,8 +503,7 @@ main {
     }
     .imagens .me {
         position: relative;
-        top: -90px;
-        left: 35px;
+        top: -80px;
     }
 
     .imagens .fundo {
@@ -529,7 +532,7 @@ main {
         font-size: 10pt;
     }
     .sobre .span h2 {
-        font-size: 12pt;
+        font-size: 17pt;
     }
 
     .panel .icos a .icon {
@@ -565,6 +568,9 @@ main {
 
     .imagens .me {
         left: 10px;
+    }
+    .imagens .fundo {
+        left: -80px;
     }
 }
 
