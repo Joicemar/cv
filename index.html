@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="body night">
+<body class="body day">
     <div class="container">
         <header>
             <div class="logo">My<span>Portfolio_</span></div>
@@ -43,12 +43,13 @@
                                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="100%" id="blobSvg">
                                     <defs>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                <stop offset="0%" style="stop-color: rgb(32, 47, 255);"></stop>
-                                                <stop offset="100%" style="stop-color: rgb(153, 45, 255);"></stop>
-                                            </linearGradient>
+                                        <pattern id="image" patternUnits="userSpaceOnUse" width="500" height="500">
+                                            <image id="me" class="blob-image"
+                                                xlink:href="https://scontent.fpoa2-1.fna.fbcdn.net/v/t1.18169-9/18556112_1036324009833274_3070926521413590569_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHXw3dsSn5aFZKx4QTiX7jeIE29L_Qt7rYgTb0v9C3uttcaPXp6efNW3SxJR2UT79u73G7WUhWjFR1Z5fXBjF12&_nc_ohc=hK7zdwtoPvoAX_qWsFh&_nc_ht=scontent.fpoa2-1.fna&oh=00_AfAm2q1-_b4zhTFrFdBXL1NmClgt8YUro43K6Z9DTv6ikA&oe=6469637B"
+                                                width="600" height="600" />
+                                        </pattern>
                                     </defs>
-                                    <path fill="url(#gradient)">
+                                    <path fill="url(#image)">
                                         <animate attributeName="d" 
                                         dur="8000ms" 
                                         repeatCount="indefinite"
@@ -77,8 +78,8 @@
                                     width="100%" id="blobSvg">
                                     <defs>
                                             <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                <stop offset="0%" style="stop-color: rgb(191, 83, 253);"></stop>
-                                                <stop offset="100%" style="stop-color: rgb(71, 90, 255);"></stop>
+                                                <stop offset="0%" style="stop-color: rgb(31, 86, 158);"></stop>
+                                                <stop offset="100%" style="stop-color: rgb(106, 26, 143);"></stop>
                                             </linearGradient>
                                     </defs>
                                     <path fill="url(#gradient)">
@@ -105,7 +106,9 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="me"><img class="me" src="foto.png" alt=""></div>
+                        <!--
+                            <div class="me"><img class="me" src="foto.png" alt=""></div>
+                        -->
                     </div>
                     <div class="span">
                         <h3 class="title" id="hey">Hey_</h3>
@@ -127,10 +130,10 @@
                     <div class="texto">
                         <h3 class="title">Sobre: </h3>
                         <p>
-                            Olá! Me chamo Joicemar da Silva Morais.
-                            Estou <strong>cursando Análise e Desenvolvimento de Sistemas</strong>
+                            Olá! <strong>Me chamo Joicemar da Silva Morais</strong>.
+                            Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong>
                             e adoro desenvolver <strong>websites responsivos</strong>. Busco conhecimentos
-                            de diversas fontes.
+                            de diversas fontes. Em <strong>constante</strong> atualização.
                         </p>
                     </div>
                 </div>

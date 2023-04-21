@@ -77,13 +77,18 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
+    z-index: 7;
 }
 .blob:nth-child(2)
 {
     filter: blur(40px);
     position: absolute;
+    z-index: 6;
     top: 0px;
 }
+.blob-image {
+    transform: translateX(-30px) translateY(0px);
+  }
 .day-icos {
     display: flex;
     flex-direction: column;
@@ -203,7 +208,7 @@ header {
     position: fixed;
     right: 10px;
     top: 20px;
-    z-index: 999;
+    z-index: 99;
 }
 
 .bars {

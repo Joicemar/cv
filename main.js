@@ -1,9 +1,9 @@
 let typingText = new Typed("#text", {
-    strings: ["Meu nome é Joicemar", "Sou Programador", "Sou dev front-end"],
+    strings: ["Meu nome é Joicemar", "Sou Dev front-end", "Sou Programador" ],
     loop: true,
     backDelay: 3000,
-    typeSpeed: 100,
-    backSpeed: 30,
+    typeSpeed: 80,
+    backSpeed: 20,
     loop: true,
 })
 
@@ -11,7 +11,7 @@ const circle = document.querySelector(".dayNight");
 let body = document.querySelector(".body");
 
 
-let dayNight = document.querySelector("#box");
+let dayNight = document.querySelector("#day-select");
 dayNight.addEventListener('click', function () {
     if (body.classList.contains("day")) {
         body.classList.remove("day");
