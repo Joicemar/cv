@@ -506,11 +506,14 @@ strong {
     .sobre {
         flex-direction: column;
     }
-    .imagens .me {
+    .blob{
         position: relative;
         top: -80px;
     }
-
+    .blob:nth-child(2)
+    {
+        top: -80px;
+    }
     .imagens .fundo {
         position: relative;
         top: 70px;
