@@ -203,7 +203,7 @@ header {
     position: fixed;
     right: 10px;
     top: 20px;
-    z-index: 99;
+    z-index: 999;
 }
 
 .bars {
