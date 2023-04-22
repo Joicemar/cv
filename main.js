@@ -1,5 +1,5 @@
 let typingText = new Typed("#text", {
-    strings: ["Meu nome é Joicemar", "Sou Dev front-end", "Sou Programador" ],
+    strings: ["Meu nome é Joicemar", "Sou Dev front-end", "Sou Programador"],
     loop: true,
     backDelay: 3000,
     typeSpeed: 80,
@@ -32,14 +32,20 @@ bars.addEventListener('click', function () {
 });
 
 // Cursor do mouse:
-document.addEventListener("mousemove", function (event) {
-    const circle = document.querySelector(".circle");
-    let x = event.clientX - circle.offsetWidth / 2;
-    let y = event.clientY - circle.offsetHeight / 2;
-    circle.style.left = x + "px";
-    circle.style.top = y + "px";
+const mouse_circle = document.querySelector('.circle');
+
+document.addEventListener('mouseleave', () => {
+    const minhaDiv = document.getElementById('circle');
+    minhaDiv.style.display = 'none';
 });
-document.addEventListener('mouseout', () => {
-    // remove o círculo do DOM quando o mouse sai da página
-    circle.remove();
+document.addEventListener('mouseenter', () => {
+    const minhaDiv = document.getElementById('circle');
+    minhaDiv.style.display = 'block';
+});
+
+document.addEventListener("mousemove", function (event) {
+    let x = event.clientX - mouse_circle.offsetWidth / 2;
+    let y = event.clientY - mouse_circle.offsetHeight / 2;
+    mouse_circle.style.left = x + "px";
+    mouse_circle.style.top = y + "px";
 });
