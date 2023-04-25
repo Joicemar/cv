@@ -503,6 +503,9 @@ body.day i {
 }
 
 @media (max-width:820px) {
+    .circle {
+        display: none;
+    }
     .sobre {
         flex-direction: column;
         height: 900px;
