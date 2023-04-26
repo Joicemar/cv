@@ -626,6 +626,11 @@ body.day i {
 }
 
 @media (max-width:510px) {
+        .body .container .sobre{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
     .imagens {
         justify-content: center;
         align-items: center;
