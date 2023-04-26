@@ -16,24 +16,30 @@
     <div class="container">
         <header>
             <div class="logo">My<span>Portfolio_</span></div>
-        </header>
-        <div class="menu">
+            <div class="menu">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">Início</a>
+                            <div class="menuline"></div>
+                        </li>
+                        <li>
+                            <a href="#">Projetos</a>
+                            <div class="menuline"></div>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                            <div class="menuline"></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="bars">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <nav class="menu-bars">
-                <ul>
-                    <h2>Projetos</h2>
-                    <li><a href="https://spectacular-gnome-fa4775.netlify.app" target="_blank">Site de viagens</a></li>
-                    <li><a href="#">Em breve!</a></li>
-                    <li><a href="#">Em breve!</a></li>
-                    <li><a href="#">Em breve!</a></li>
-                    <li><a href="#">Em breve!</a></li>
-                </ul>
-            </nav>
-        </div>
+        </header>
         <main>
             <section class="sobre">
                 <div class="content">
@@ -50,7 +56,7 @@
                                         </pattern>
                                     </defs>
                                     <path fill="url(#image)">
-                                        <animate attributeName="d" dur="7000ms" repeatCount="indefinite"
+                                        <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
                                         values="
                                         M430.5,352.5Q368,455,246.5,460.5Q125,466,106.5,358Q88,250,118,161.5Q148,73,252,70Q356,67,424.5,158.5Q493,250,430.5,352.5Z;
                                         M386,341.5Q356,433,266.5,404.5Q177,376,120.5,313Q64,250,105,159.5Q146,69,253.5,63.5Q361,58,388.5,154Q416,250,386,341.5Z;
@@ -74,12 +80,12 @@
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                                     <defs>
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color: rgb(160, 173, 248);"></stop>
-                                            <stop offset="100%" style="stop-color: rgb(222, 147, 245);"></stop>
+                                            <stop offset="0%" style="stop-color: rgb(146, 202, 255);"></stop>
+                                            <stop offset="100%" style="stop-color: rgb(217, 161, 255);"></stop>
                                         </linearGradient>
                                     </defs>
                                     <path fill="url(#gradient)">
-                                        <animate attributeName="d" dur="7000ms" repeatCount="indefinite"
+                                        <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
                                         values="
                                         M430.5,352.5Q368,455,246.5,460.5Q125,466,106.5,358Q88,250,118,161.5Q148,73,252,70Q356,67,424.5,158.5Q493,250,430.5,352.5Z;
                                         M386,341.5Q356,433,266.5,404.5Q177,376,120.5,313Q64,250,105,159.5Q146,69,253.5,63.5Q361,58,388.5,154Q416,250,386,341.5Z;
@@ -110,10 +116,10 @@
                     <div class="skills">
                         <h3 class="title">Habilidades:</h3>
                         <ul>
-                            <li> <ion-icon class="icon" size="large" name="logo-html5"></ion-icon> HTML5</li>
-                            <li><ion-icon class="icon" size="large" name="logo-CSS3"></ion-icon> CSS3</li>
-                            <li><ion-icon class="icon" size="large" name="logo-Javascript"></ion-icon> Javascript</li>
-                            <li><i class='bx bxl-java'></i>Java</li>
+                            <li> <ion-icon class="icon" size="large" name="logo-html5"></ion-icon> <strong>HTML5</strong></li>
+                            <li><ion-icon class="icon" size="large" name="logo-CSS3"></ion-icon> <strong>CSS3</strong></li>
+                            <li><ion-icon class="icon" size="large" name="logo-Javascript"></ion-icon> <strong>Javascript</strong></li>
+                            <li><i class='bx bxl-java'></i><strong>Java</strong></li>
                         </ul>
                     </div>
                     <div class="texto">
@@ -122,7 +128,7 @@
                             Olá! <strong>Me chamo Joicemar da Silva Morais</strong>.
                             Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong>
                             e adoro desenvolver <strong>websites responsivos</strong>. Busco conhecimentos
-                            de diversas fontes. Em <strong>constante</strong> atualização.
+                            de diversas fontes. <strong>Em constante atualização.</strong>
                         </p>
                     </div>
                 </div>
@@ -160,9 +166,7 @@
             </section>
         </main>
     </div>
-    <div class="circle" id="circle">
-        <div id="point"></div>
-    </div>
+ 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>

@@ -33,6 +33,7 @@ bars.addEventListener('click', function () {
 
 // Cursor do mouse:
 const mouse_circle = document.querySelector('.circle');
+const  mouse_point = document.querySelector('#point');
 
 document.addEventListener('mouseleave', () => {
     const minhaDiv = document.getElementById('circle');
@@ -49,3 +50,10 @@ document.addEventListener("mousemove", function (event) {
     mouse_circle.style.left = x + "px";
     mouse_circle.style.top = y + "px";
 });
+document.addEventListener("mousemove", function (event) {
+    let x = event.clientX - mouse_point.offsetWidth / 2;
+    let y = event.clientY - mouse_point.offsetHeight / 2;
+    mouse_point.style.left = x + "px";
+    mouse_point.style.top = y + "px";
+});
+
